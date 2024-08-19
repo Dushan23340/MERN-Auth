@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <div className="bg-blue-300">
-      <div className="flex justify-between items-center max-w-6xl mx-36">
+      <div className="flex justify-between items-center max-w-6xl mx-auto">
       <Link to="/" className="flex items-center space-x-2">
   {/* Logo Image */}
   <img src="src/assets/images/logo.png" alt="Logo" className="h-16 w-16" />
@@ -33,7 +33,9 @@ export default function Header() {
           <Link to="/about">
             <li>About Us</li>
           </Link>
+          <Link to="/support">
           <li>Support</li>
+          </Link>
           <li>Blog</li>
           <Link to="/sign-in">
             <button className="bg-gradient-to-r from-[#4778F5] to-[#0056D2] text-white px-4 py-2 rounded-full ml-4 hover:bg-blue-700 transition">
